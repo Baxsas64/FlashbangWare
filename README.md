@@ -1,2 +1,5 @@
-# FlashbangWare
-A fun Malware that whitescreens it's "victim" to recreate a flashbang.
+Just a very simple fun program that is not meant to harm anyone or anyone's device.
+
+- no Autostart
+- easily killable with Taskmanager
+- only for educational purposes
