@@ -1,0 +1,25 @@
+#include <iostream>
+#include "windows.h"
+
+
+int main()
+{
+    system("color F1");
+    HWND window;
+    window = FindWindowA("ConsoleWindowClass", NULL);
+    ShowWindow(window, 0);
+    HMENU hmenu = GetSystemMenu(window, FALSE);
+    EnableMenuItem(hmenu, SC_CLOSE, MF_GRAYED); //disabling X-Button to prevent victim from closing console
+    Sleep(1000);
+    A:
+    ShowWindow(window, 3);
+    Sleep(1000);
+    ShowWindow(window, 0);
+    Sleep(10000); //time to wait between white-screens
+    goto A;
+}
+
+
+
+
+//https://github.com/Baxsas64
